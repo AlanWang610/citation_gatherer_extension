@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "HTML Page Saver",
+  "version": "1.0",
+  "description": "Automatically saves HTML content from specified websites",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "downloads",
+    "activeTab",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
