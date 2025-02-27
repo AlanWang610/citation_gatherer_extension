@@ -36,8 +36,12 @@
 </head>
 <body>
   <div class="form-group">
-    <label for="urlPattern">URL Pattern (regex):</label>
-    <input type="text" id="urlPattern" placeholder="e.g., .*\.example\.com/.*">
+    <label for="downloadUrlPattern">Download URL Pattern (regex):</label>
+    <input type="text" id="downloadUrlPattern" placeholder="e.g., .*\.example\.com/.*">
+  </div>
+  <div class="form-group">
+    <label for="openUrlPattern">Open URL Pattern (regex):</label>
+    <input type="text" id="openUrlPattern" placeholder="e.g., .*\.example\.com/search/.*">
   </div>
   <div class="form-group">
     <label for="saveFolder">Save Folder Name:</label>
@@ -50,6 +54,12 @@
   <div class="form-group">
     <label for="delay">Delay (seconds):</label>
     <input type="text" id="delay" value="3">
+  </div>
+  <div class="form-group">
+    <label>
+      <input type="checkbox" id="disableReferenceExpansion">
+      Disable reference expansion
+    </label>
   </div>
   <button class="save-btn" id="saveSettings">Save Settings</button>
   <script src="popup.js"></script>
